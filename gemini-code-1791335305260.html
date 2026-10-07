@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fail Temu Duga Kerajaan | SPANS & Sabah</title>
+  <!-- Google Fonts & FontAwesome Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <i class="fa-solid fa-graduation-cap gold-icon"></i>
+      <span>DOSSIER TEMU DUGA</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#muka-depan"><i class="fa-solid fa-id-card"></i> Muka Depan</a></li>
+      <li><a href="#kandungan"><i class="fa-solid fa-list-check"></i> 12 Kandungan</a></li>
+      <li><a href="#galeri-media"><i class="fa-solid fa-photo-film"></i> Gambar & Video</a></li>
+      <li><a href="#fail-masa-depan"><i class="fa-solid fa-folder-plus"></i> Hub Fail</a></li>
+    </ul>
+    <button class="btn-primary" onclick="window.print()"><i class="fa-solid fa-print"></i> Cetak Fail (PDF)</button>
+  </nav>
+
+  <!-- Header Stripes / Flag Accents -->
+  <div class="flag-stripe-bar">
+    <div class="stripe green"></div>
+    <div class="stripe red"></div>
+    <div class="stripe yellow"></div>
+    <div class="stripe blue"></div>
+  </div>
+
+  <main class="container">
+
+    <!-- Hero Section / Muka Depan Showcase -->
+    <section id="muka-depan" class="card-section page-preview">
+      <div class="gold-border-wrapper">
+        <div class="logos-header">
+          <div class="logo-badge">
+            <i class="fa-solid fa-landmark logo-icon"></i>
+            <span>JATA NEGARA</span>
+          </div>
+          <div class="logo-badge primary">
+            <i class="fa-solid fa-mountain logo-icon"></i>
+            <span>NEGERI SABAH</span>
+          </div>
+          <div class="logo-badge">
+            <i class="fa-solid fa-building-columns logo-icon"></i>
+            <span>SPANS</span>
+          </div>
+        </div>
+
+        <h1 class="main-title">DOSSIER DOKUMEN TEMU DUGA</h1>
+        <p class="sub-title">SURUHANJAYA PERKHIDMATAN AWAM NEGERI SABAH</p>
+
+        <!-- Dynamic Input Form / Editable Presentation Details -->
+        <div class="details-grid">
+          <div class="detail-item">
+            <label><i class="fa-solid fa-briefcase"></i> Tajuk Jawatan Dipohon:</label>
+            <input type="text" value="Pegawai Tadbir Grade N41" placeholder="Masukkan Nama Jawatan">
+          </div>
+          <div class="detail-item">
+            <label><i class="fa-solid fa-hashtag"></i> No. Iklan / Rujukan:</label>
+            <input type="text" value="SPANS/2026/ADV/09" placeholder="Masukkan No Iklan">
+          </div>
+          <div class="detail-item">
+            <label><i class="fa-solid fa-user"></i> Nama Pemohon:</label>
+            <input type="text" value="Ahmad bin Zulkifli" placeholder="Nama Penuh">
+          </div>
+          <div class="detail-item">
+            <label><i class="fa-solid fa-address-card"></i> No. Kad Pengenalan:</label>
+            <input type="text" value="980512-12-5543" placeholder="No Kad Pengenalan">
+          </div>
+          <div class="detail-item full-width">
+            <label><i class="fa-solid fa-calendar-day"></i> Tarikh Temu Duga:</label>
+            <input type="date" value="2026-11-15">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12 Senarai Kandungan Section -->
+    <section id="kandungan" class="card-section">
+      <div class="section-header">
+        <h2><i class="fa-solid fa-list-ol"></i> 12 Senarai Kandungan & Pembahagi (Dividers)</h2>
+        <p>Klik pada setiap bahagian untuk melihat salinan & dokumen berkaitan di belakangnya.</p>
+      </div>
+
+      <div class="toc-grid">
+        <!-- 12 Items -->
+        <div class="toc-card" onclick="toggleDivider(1)">
+          <span class="num-badge">01</span>
+          <div class="toc-info">
+            <h3>Surat Panggilan Temu Duga</h3>
+            <p>Salinan Rasmi / Cetakan Email</p>
+          </div>
+          <i class="fa-solid fa-chevron-right arrow"></i>
+        </div>
+
+        <div class="toc-card" onclick="toggleDivider(2)">
+          <span class="num-badge">02</span>
+          <div class="toc-info">
+            <h3>Resume / Biodata Ringkas / CV</h3>
+            <p>Pengalaman & Maklumat Diri</p>
+          </div>
+          <i class="fa-solid fa-chevron-right arrow"></i>
+        </div>
+
+        <div class="toc-card highlight" onclick="toggleDivider(3)">
+          <span class="num-badge">03</span>
+          <div class="toc-info">
+            <h3>Kad Pengenalan Calon (Salinan & Original)</h3>
+            <p>Tersedia Ruang Khas Kad Asal</p>
+          </div>
+          <i class="fa-solid fa-id-badge arrow"></i>
+        </div>
+
+        <div class="toc-card" onclick="toggleDivider(4)">
+          <span class="num-badge">04</span>
+          <div class="toc-info">
+            <h3>Sijil Kelahiran Calon</h3>
+            <p>Salinan & Asal</p>
+          </div>
+          <i class="fa-solid fa-chevron-right arrow"></i>
+        </div>
+
+        <div class="toc-card" onclick="toggleDivider(5)">
+          <span class="num-badge">05</span>
+          <div class="toc-info">
+            <h3>Sijil Lahir / Kematian Bapa</h3>
+            <p>Dokumen Pengesahan Bapa</p>
+          </div>
+          <i class="fa-solid fa-chevron-right arrow"></i>
+        </div>
+
+        <div class="toc-card" onclick="toggleDivider(6)">
+          <span class="num-badge">06</span>
+          <div class="toc-info">
+            <h3>Sijil Lahir / Kematian Ibu</h3>
+            <p>Dokumen Pengesahan Ibu</p>
+          </div>
+          <i class="fa-solid fa-chevron-right arrow"></i>
+        </div>
+
+        <div class="toc-card" onclick="toggleDivider(7)">
+          <span class="num-badge">07</span>
+          <div class="toc-info">
+            <h3>Salinan Kad Pengenalan Ibu</h3>
+            <p>Salinan Pengesahan Diri Ibu</p>
+          </div>
+          <i class="fa-solid fa-chevron-right arrow"></i>
+        </div>
+
+        <div class="toc-card" onclick="toggleDivider(8)">
+          <span class="num-badge">08</span>
+          <div class="toc-info">
+            <h3>Sijil Pelajaran Malaysia (SPM)</h3>
+            <p>Keputusan SPM / Equivalens</p>
+          </div>
+          <i class="fa-solid fa-chevron-right arrow"></i>
+        </div>
+
+        <div class="toc-card" onclick="toggleDivider(9)">
+          <span class="num-badge">09</span>
+          <div class="toc-info">
+            <h3>Sijil STPM / Matrikulasi / Diploma</h3>
+            <p>Peringkat Menengah Tinggi</p>
+          </div>
+          <i class="fa-solid fa-chevron-right arrow"></i>
+        </div>
+
+        <div class="toc-card" onclick="toggleDivider(10)">
+          <span class="num-badge">10</span>
+          <div class="toc-info">
+            <h3>Sijil Akademik Lain-Lain</h3>
+            <p>Ijazah / Transkrip Rasmi / MQA</p>
+          </div>
+          <i class="fa-solid fa-chevron-right arrow"></i>
+        </div>
+
+        <div class="toc-card" onclick="toggleDivider(11)">
+          <span class="num-badge">11</span>
+          <div class="toc-info">
+            <h3>Sijil Tamat Persekolahan</h3>
+            <p>Surat Akuan Sekolah</p>
+          </div>
+          <i class="fa-solid fa-chevron-right arrow"></i>
+        </div>
+
+        <div class="toc-card" onclick="toggleDivider(12)">
+          <span class="num-badge">12</span>
+          <div class="toc-info">
+            <h3>Sijil Penghargaan / Penyertaan</h3>
+            <p>Aktiviti / Pencapaian Tambahan</p>
+          </div>
+          <i class="fa-solid fa-chevron-right arrow"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Media Section (Gambar & Video) -->
+    <section id="galeri-media" class="card-section">
+      <div class="section-header">
+        <h2><i class="fa-solid fa-photo-film"></i> Galeri Media & Bukti Sokongan</h2>
+        <p>Muat naik gambar sijil, dokumen asli, dan video pembentangan/simulasi temu duga.</p>
+      </div>
+
+      <!-- Image Upload & Display Area -->
+      <div class="media-container">
+        <h3><i class="fa-solid fa-images"></i> Galeri Gambar Dokumen / Sijil</h3>
+        <div class="upload-box" onclick="document.getElementById('imageInput').click()">
+          <i class="fa-solid fa-cloud-arrow-up upload-icon"></i>
+          <p>Klik di sini untuk menambah **Gambar Dokumen / Sijil**</p>
+          <input type="file" id="imageInput" accept="image/*" multiple style="display:none;" onchange="previewImages(event)">
+        </div>
+        <div class="image-grid" id="imageGrid">
+          <!-- Placeholder Mock Images -->
+          <div class="media-card">
+            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=400&q=80" alt="Dokumen Sample">
+            <span>Sijil SPM & Transkrip</span>
+          </div>
+          <div class="media-card">
+            <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=400&q=80" alt="Resume Sample">
+            <span>Resume & Portfolio</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Video Section -->
+      <div class="media-container" style="margin-top: 30px;">
+        <h3><i class="fa-solid fa-video"></i> Video Simulasi / Pembentangan</h3>
+        <div class="video-input-group">
+          <input type="text" id="videoUrlInput" placeholder="Tampal Pautan Video YouTube / Vimeo / Drive...">
+          <button class="btn-secondary" onclick="addVideo()"><i class="fa-solid fa-plus"></i> Tambah Video</button>
+        </div>
+        <div class="video-grid" id="videoGrid">
+          <div class="video-card">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video Pembentangan" allowfullscreen></iframe>
+            <span>Video Pengenalan Diri / Mock Interview</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Future Documents & File Hub -->
+    <section id="fail-masa-depan" class="card-section">
+      <div class="section-header">
+        <h2><i class="fa-solid fa-folder-tree"></i> Hub Fail Masa Depan (Dokumen Extra)</h2>
+        <p>Simpan fail PDF tambahan, slip panggilan baru, atau tajuk kerja lain untuk permohonan akan datang.</p>
+      </div>
+
+      <div class="upload-box" onclick="document.getElementById('fileInput').click()">
+        <i class="fa-solid fa-file-pdf upload-icon gold-icon"></i>
+        <p>Muat naik fail **PDF, DOCX, atau ZIP** untuk kegunaan masa depan</p>
+        <input type="file" id="fileInput" multiple style="display:none;" onchange="addFutureFiles(event)">
+      </div>
+
+      <table class="file-table">
+        <thead>
+          <tr>
+            <th><i class="fa-solid fa-file"></i> Nama Fail</th>
+            <th><i class="fa-solid fa-tag"></i> Kategori</th>
+            <th><i class="fa-solid fa-clock"></i> Tarikh Dimuat Naik</th>
+            <th><i class="fa-solid fa-gear"></i> Tindakan</th>
+          </tr>
+        </thead>
+        <tbody id="fileTableBody">
+          <tr>
+            <td><i class="fa-solid fa-file-pdf red-icon"></i> Surat_Pengesahan_Majikan_2026.pdf</td>
+            <td><span class="badge">Sokongan</span></td>
+            <td>07 Okt 2026</td>
+            <td><button class="btn-sm"><i class="fa-solid fa-download"></i></button></td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-file-word blue-icon"></i> Draft_Soalan_Temuduga_SPANS.docx</td>
+            <td><span class="badge warning">Nota</span></td>
+            <td>05 Okt 2026</td>
+            <td><button class="btn-sm"><i class="fa-solid fa-download"></i></button></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Sistem Dossier Temu Duga Kerajaan Sabah & SPANS. Sedia untuk GitHub Pages.</p>
+  </footer>
+
+  <!-- JavaScript Code -->
+  <script>
+    function toggleDivider(num) {
+      alert("Menjana dan membuka Pembahagi Lembaran Bahagian " + num + " untuk dicetak/dilihat.");
+    }
+
+    function previewImages(event) {
+      const files = event.target.files;
+      const imageGrid = document.getElementById('imageGrid');
+
+      for (let file of files) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          const card = document.createElement('div');
+          card.className = 'media-card';
+          card.innerHTML = `<img src="${e.target.result}" alt="Uploaded Image"><span>${file.name}</span>`;
+          imageGrid.appendChild(card);
+        }
+        reader.readAsDataURL(file);
+      }
+    }
+
+    function addVideo() {
+      const url = document.getElementById('videoUrlInput').value;
+      if (!url) return alert('Sila masukkan pautan video!');
+      
+      const videoGrid = document.getElementById('videoGrid');
+      const card = document.createElement('div');
+      card.className = 'video-card';
+      card.innerHTML = `<iframe src="${url}" allowfullscreen></iframe><span>Video Pautan Baru</span>`;
+      videoGrid.appendChild(card);
+      document.getElementById('videoUrlInput').value = '';
+    }
+
+    function addFutureFiles(event) {
+      const files = event.target.files;
+      const tbody = document.getElementById('fileTableBody');
+
+      for (let file of files) {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td><i class="fa-solid fa-file-lines blue-icon"></i> ${file.name}</td>
+          <td><span class="badge">Masa Depan</span></td>
+          <td>${new Date().toLocaleDateString('ms-MY')}</td>
+          <td><button class="btn-sm"><i class="fa-solid fa-download"></i></button></td>
+        `;
+        tbody.appendChild(tr);
+      }
+    }
+  </script>
+</body>
+</html>
